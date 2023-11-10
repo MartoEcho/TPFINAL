@@ -1,0 +1,153 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(24, 28, 48);
+    color: rgb(230, 221, 196);
+}
+
+/*--------------------- Menu -------------------------*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0px 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.item-menu {
+    list-style-type: none;
+}
+
+.item-menu:active{
+    transform: translate(3px, 2px);
+}
+
+.item-menu:active > .item-link{
+    box-shadow: 0px 0px;
+}
+
+.item-his, .item-jug {
+    box-shadow: 2px 3px #678983;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #E6DDC4;
+    color: #181D31;
+    font-weight: 300;
+}
+
+/*--------------------- Header -------------------------*/
+header {
+    background: url(images/codigo.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 500px;
+    color: #eeeeee;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.titulo-body {
+    text-align: center;
+    text-shadow: 2px 2px gray, 6px 6px black;
+}
+
+/*--------------------- Body -------------------------*/
+h2 {
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+    color: #678983;
+}
+
+main {
+    padding: 100px 20px;
+}
+
+.contenedor-historia {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-historia {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 50px;
+    gap: 20px;
+    background-color: linear-gradient(10% #E6DDC4,#181D31 100%);
+}
+
+.texto-historia {
+    width: 45%;
+}
+
+/*--------------------- Video -------------------------*/
+.contenedor-video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px;
+}
+
+.contenedor {
+    padding: 5px;
+    background-color: black;
+    width: 70%;
+}
+
+video {
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+.barra {
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    padding: 20px 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botonera {
+    display: flex;
+    gap: 20px;
+}
+
+.botonesVideo {
+    box-shadow: 2px 3px #678983;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #E6DDC4;
+    color: #181D31;
+    font-weight: 300;
+}
+
+#play, #pause {
+    width: 80px;
+}
+
+#duracion{
+    padding-top: 12px;
+    padding-right: 30px ;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}

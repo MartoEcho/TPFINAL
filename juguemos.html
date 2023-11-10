@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./juguemos.css">
+    <link rel="icon" href="./images/logo.png">
+    <title>Proyecto-Final</title>
+</head>
+<body>
+
+    <!--------------------- Menu ------------------------->
+    <nav>
+        <a href="./index.html">
+        
+            <svg width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="rectangulo" fill="#495579" stroke="#F0E9D2" stroke-width="3"> 
+                    <animate attributeType="XML" attributeName="y" from="-70" to="5" dur="1s" repeatCount="1"/>
+                </rect>
+                
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#495579" id="poligono" stroke="#F0E9D2" stroke-width="3">
+                    <animate attributeType="XML" attributeName="points" from="55 90 ,95 90,115 107,30 107" to="55 45 ,95 45,115 62,30 62" dur="1s" repeatCount="1"/>
+                </polygon>
+            
+            </svg>
+        </a>
+        
+        <ul class="menu"> 
+            <li class="item-menu">
+                <a class="item-his" href="./historia.html">HISTORIA</a>    
+            </li>
+
+            <li class="item-menu">
+                <a class="item-jug" href="./juguemos.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!--------------------- Header ------------------------->
+
+    <header>
+        <h1 class="titulo-body">JUGUEMOS UN POCO</h1> 
+    </header>
+
+    <!--------------------- Body ------------------------->
+
+    <main class="contenedor">
+        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
+        
+        <section class="juego">
+             <div class="cajas" >
+                    <div class="caja" id="cajaDestino1">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+                        
+                    <div class="caja" id="cajaDestino2">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+                        
+                    <div class="caja" id="cajaDestino3">
+                        <p>Arrastre y suelte la imágene aquí</p>
+                    </div>
+             </div>
+                    
+             <div id="cajaimagenes" >
+                    <img id="imagen1" src="./images/Rompe2.png" alt="imagen-rompecabezas" />
+                    <img id="imagen2" src="./images/Rompe1.png" alt="imagen-rompecabezas" />
+                    <img id="imagen3" src="./images/Rompe3.png" alt="imagen-rompecabezas" />
+                    </div>
+        </section>
+                
+        <button class="reinicio" onclick="reinicio()">Reiniciar</button>
+        
+    </main>
+            
+
+    <!--------------------- Footer ------------------------->
+
+    <iframe src="pie.html" style="height: 180px;width:100%;" frameborder="0"></iframe>
+
+
+    <!--------------------- Script ------------------------->
+
+    <script src="./juguemos.js"></script>
+
+</body>
+</html>

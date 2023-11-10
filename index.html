@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./images/logo.png">
+    <title>Proyecto-Final</title>
+</head>
+<body>
+    <!--------------------- Menu ------------------------->
+    <nav>
+        <a href="./index.html">
+        
+            <svg width="200" height="80">
+                <rect x="45" y="5" width="60" height="35" rx="5" id="rectangulo" fill="#495579" stroke="#F0E9D2" stroke-width="3"> 
+                    <animate attributeType="XML" attributeName="y" from="-70" to="5" dur="1s" repeatCount="1"/>
+                </rect>
+                
+                <polygon points="55 45 ,95 45,115 62,30 62" fill="#495579" id="poligono" stroke="#F0E9D2" stroke-width="3">
+                    <animate attributeType="XML" attributeName="points" from="55 90 ,95 90,115 107,30 107" to="55 45 ,95 45,115 62,30 62" dur="1s" repeatCount="1"/>
+                </polygon>
+            
+            </svg>
+        </a>
+        
+        <ul class="menu"> 
+            <li class="item-menu">
+                <a class="item-his" href="./historia.html">HISTORIA</a>    
+            </li>
+
+            <li class="item-menu">
+                <a class="item-jug" href="./juguemos.html">JUGUEMOS</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <!--------------------- Header ------------------------->
+    <header> 
+        <h1 class="titulo-body">PROGRAMACION E HISTORIA</h1> 
+    </header>
+
+    <body class="body">
+
+    <h2>CONTENIDO</h2>
+
+    <main class="contenedor-tarjetas">
+    
+        <div class="tarjeta">
+            <img class="imgen-tarjeta" src="./images/img1.jpg" >
+            <p class="descripcion-tarjeta">Conozcamos Un poco sobre la historia de la programacion </p>
+            <a class="boton-link" href="./historia.html" style="color:rgb(230, 221, 196)">Ir a Historia</a>
+        </div>
+
+        <div class="tarjeta">
+            <img class="imgen-tarjeta" src="./images/img2.jpg">
+            <p class="descripcion-tarjeta">Juguemos un poco sobre la computacion</p>
+            <a class="boton-link" href="./juguemos.html" style="color:rgb(230, 221, 196)">Ir a juego</a>
+        </div>
+
+    </main>
+
+    <!--------------------- Footer ------------------------->
+
+        <iframe src="./pie.html" style="height: 180px;width:100%;" frameborder="0"></iframe>
+
+</body>
+</html>

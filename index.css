@@ -1,0 +1,125 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgb(24, 28, 48);
+    color: rgb(230, 221, 196);
+}
+
+/*--------------------- Menu -------------------------*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0px 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.item-menu {
+    list-style-type: none;
+}
+
+.item-menu:active{
+    transform: translate(3px, 2px);
+}
+
+.item-menu:active > .item-link{
+    box-shadow: 0px 0px;
+}
+
+.item-his, .item-jug {
+    box-shadow: 2px 3px #678983;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #E6DDC4;
+    color: #181D31;
+    font-weight: 300;
+}
+
+/*--------------------- Header -------------------------*/
+header {
+    background: url(images/codigo.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 500px;
+    color: #eeeeee;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.titulo-body {
+    text-align: center;
+    text-shadow: 2px 2px gray, 6px 6px black;
+}
+
+/*--------------------- Body -------------------------*/
+h2 {
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+    color: #678983;
+}
+
+.contenedor-tarjetas {
+    margin: 100px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.tarjeta {
+    width: 350px;
+    height: 400px;
+    border: 5px solid #678983;
+    background-color: #E6DDC4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.imgen-tarjeta {
+    width: 100%;
+    margin: 0px;
+}
+
+.descripcion-tarjeta {
+    width: 90%;
+    text-align: center;
+    height: 30px;
+    color: #181D31;
+}
+
+.boton-link {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #181D31;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 2px 3px #678983;
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+.boton-link:active{
+    box-shadow: 0px 0px darkgray;
+    transform: translate(3px, 2px);
+}
+
+

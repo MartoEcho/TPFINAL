@@ -1,0 +1,143 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-color: rgb(24, 28, 48);
+    color: rgb(230, 221, 196);
+}
+
+/*--------------------- Menu -------------------------*/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0px 40px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 300px;
+}
+
+.item-menu {
+    list-style-type: none;
+}
+
+.item-menu:active{
+    transform: translate(3px, 2px);
+}
+
+.item-menu:active > .item-link{
+    box-shadow: 0px 0px;
+}
+
+.item-his, .item-jug {
+    box-shadow: 2px 3px #678983;
+    border-radius: 10px;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #E6DDC4;
+    color: #181D31;
+    font-weight: 300;
+}
+
+/*--------------------- Header -------------------------*/
+header {
+    background: url(images/codigo.jpg) 50% 0 fixed;
+    background-size: cover;
+    min-height: 500px;
+    color: #eeeeee;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 100px;
+}
+
+.titulo-body {
+    text-align: center;
+    text-shadow: 2px 2px gray, 6px 6px black;
+}
+
+
+/*--------------------- Juego -------------------------*/
+h2 {
+    text-shadow: 2px 2px black;
+    font-size: 40px;
+    text-align: center;
+    color: #678983;
+    padding-top: 100px;
+}
+
+.juego{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajas{
+    display: flex;
+    flex-direction: row;
+}
+
+.caja{
+    width: 275px;
+    height: 400px;
+    display: flex;
+    border: 2px solid black;
+    background-color: grey;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja:hover{
+    background-color: #1d1d1d;
+}
+
+.caja:hover>p{
+    color: #E6DDC4;
+}
+
+#cajaimagenes{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 40px;
+}
+
+#imagen1,#imagen2,#imagen3{
+    width: 275px;
+    height: 400px;
+}
+
+.reinicio{
+    box-shadow: 2px 3px #678983;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: #E6DDC4;
+    color: #181D31;
+    font-weight: 300;
+    display: flex;
+    margin: auto;
+    padding: 10px 100px;
+}
+
+.reinicio:active{
+    transform: translate(3px, 2px);
+}
+
+.reinicio:active > .item-link{
+    box-shadow: 0px 0px;
+}
+
+.contenedor{
+    padding-bottom: 90px;
+}
